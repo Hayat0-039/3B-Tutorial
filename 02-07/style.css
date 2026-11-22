@@ -2,13 +2,19 @@
 
 @keyframes scaleIn {
   0% {
-    scale: 0.2;
+    transform: scale(0.2);
   }
+
+  50% {
+    transform: scale(0.8) rotate(-10deg);
+  }
+
   85% {
-    scale: 1.1;
+    transform: scale(1.1) rotate(5deg);
   }
+
   100% {
-    scale: 1;
+    transform: scale(1) rotate(0deg);
   }
 }
 
