@@ -12,13 +12,20 @@ h1 {
   letter-spacing: .15em; 
 }
 
+h1 {
+  animation: typing 3s steps(14), blinking .5s steps(1) infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 14ch }
+}
 
 @keyframes blinking {
-  0%, 100% {
-    border-color: transparent;
+  0% {
+    width: 0px;
   }
-  50% {
-    border-color: #CE2D4F;
+  100% {
+    width: 100%
     }
 }
 
